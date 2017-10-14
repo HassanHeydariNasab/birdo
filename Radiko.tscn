@@ -1,0 +1,140 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://Radiko.gd" type="Script" id=1]
+[ext_resource path="res://Homoj/Knabo/Homo.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Birdo.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Insektoj/Insekto-1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Butonoj/turni_dekstre.png" type="Texture" id=5]
+[ext_resource path="res://Butonoj/turni_dekstre_premita.png" type="Texture" id=6]
+
+[node name="Radiko" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Kamero" type="Camera2D" parent="."]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit/left = -10000000
+limit/top = -10000000
+limit/right = 10000000
+limit/bottom = 10000000
+drag_margin/h_enabled = true
+drag_margin/v_enabled = true
+smoothing/enable = false
+smoothing/speed = 5.0
+drag_margin/left = 0.2
+drag_margin/top = 0.2
+drag_margin/right = 0.2
+drag_margin/bottom = 0.2
+
+[node name="Homoj" type="Node2D" parent="."]
+
+[node name="Homo" parent="Homoj" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1400, 200 )
+
+[node name="Homo1" parent="Homoj" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 250, 200 )
+
+[node name="Homo2" parent="Homoj" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -550, 200 )
+
+[node name="Homo3" parent="Homoj" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 2300, 200 )
+
+[node name="Homo4" parent="Homoj" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 3300, 200 )
+
+[node name="Homo5" parent="Homoj" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 4400, 200 )
+
+[node name="Homo6" parent="Homoj" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 7150, 250 )
+
+[node name="Homo7" parent="Homoj" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 6300, 250 )
+
+[node name="Birdo" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 0, -100 )
+
+[node name="Insektoj" type="Node2D" parent="."]
+
+[node name="Insekto" parent="Insektoj" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 775.716, 108.81 )
+
+[node name="Insekto1" parent="Insektoj" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 472.811, 12.9934 )
+
+[node name="Insekto2" parent="Insektoj" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1356.8, -135.368 )
+
+[node name="Insekto3" parent="Insektoj" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1953.34, 179.9 )
+
+[node name="Kanvaso" type="CanvasLayer" parent="."]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+
+[node name="Kontroliloj" type="Control" parent="Kanvaso"]
+
+visibility/opacity = 0.4
+anchor/top = 3
+anchor/bottom = 3
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 300.0
+margin/right = 40.0
+margin/bottom = 260.0
+
+[node name="Supre" type="TouchScreenButton" parent="Kanvaso/Kontroliloj"]
+
+transform/pos = Vector2( 0, 350 )
+transform/rot = 90.0
+transform/scale = Vector2( 0.585938, 0.585938 )
+normal = ExtResource( 5 )
+pressed = ExtResource( 6 )
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = true
+action = "supre"
+visibility_mode = 0
+
+[node name="Malsupre" type="TouchScreenButton" parent="Kanvaso/Kontroliloj"]
+
+transform/pos = Vector2( 150, 350 )
+transform/rot = -90.0
+transform/scale = Vector2( 0.585938, 0.585938 )
+normal = ExtResource( 5 )
+pressed = ExtResource( 6 )
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = true
+action = "malsupre"
+visibility_mode = 0
+
+
