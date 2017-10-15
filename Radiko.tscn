@@ -1,11 +1,15 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://Radiko.gd" type="Script" id=1]
-[ext_resource path="res://Homoj/Knabo/Homo.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Birdo.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Insektoj/Insekto-1.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Butonoj/turni_dekstre.png" type="Texture" id=5]
-[ext_resource path="res://Butonoj/turni_dekstre_premita.png" type="Texture" id=6]
+[ext_resource path="res://Konstruajxoj/muro.jpg" type="Texture" id=2]
+[ext_resource path="res://Konstruajxoj/1.png" type="Texture" id=3]
+[ext_resource path="res://Konstruajxoj/2.png" type="Texture" id=4]
+[ext_resource path="res://Konstruajxoj/3.png" type="Texture" id=5]
+[ext_resource path="res://Homoj/Knabo/Homo.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Birdo.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Insektoj/Insekto-1.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Butonoj/turni_dekstre.png" type="Texture" id=9]
+[ext_resource path="res://Butonoj/turni_dekstre_premita.png" type="Texture" id=10]
 
 [node name="Radiko" type="Node2D"]
 
@@ -30,59 +34,152 @@ drag_margin/top = 0.2
 drag_margin/right = 0.2
 drag_margin/bottom = 0.2
 
+[node name="Muroj" type="Node2D" parent="."]
+
+[node name="Sprite7" type="Sprite" parent="Muroj"]
+
+transform/pos = Vector2( 4303, 159 )
+transform/scale = Vector2( 0.3, 0.3065 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="Sprite9" type="Sprite" parent="Muroj"]
+
+transform/pos = Vector2( 3093, 159 )
+transform/scale = Vector2( 0.3, 0.3065 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="Sprite10" type="Sprite" parent="Muroj"]
+
+transform/pos = Vector2( 2703, 159 )
+transform/scale = Vector2( 0.3, 0.3065 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="Sprite11" type="Sprite" parent="Muroj"]
+
+transform/pos = Vector2( 913, 159 )
+transform/scale = Vector2( 0.3, 0.3065 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="Sprite8" type="Sprite" parent="Muroj"]
+
+transform/pos = Vector2( 6063, 159 )
+transform/scale = Vector2( 0.3, 0.3065 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="Sprite7 2" type="Sprite" parent="Muroj"]
+
+transform/pos = Vector2( 4693, 159 )
+transform/scale = Vector2( 0.3, 0.3065 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="Sprite74" type="Sprite" parent="Muroj"]
+
+transform/pos = Vector2( 3483, 159 )
+transform/scale = Vector2( 0.3, 0.3065 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="Sprite73" type="Sprite" parent="Muroj"]
+
+transform/pos = Vector2( 6453, 159 )
+transform/scale = Vector2( 0.3, 0.3065 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="Konstruajxoj" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="Konstruajxoj"]
+
+transform/pos = Vector2( 130, 110 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="Sprite1" type="Sprite" parent="Konstruajxoj"]
+
+transform/pos = Vector2( 1308, 150 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Sprite4" type="Sprite" parent="Konstruajxoj"]
+
+transform/pos = Vector2( 3900, 150 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Sprite2" type="Sprite" parent="Konstruajxoj"]
+
+transform/pos = Vector2( 2030, 100 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
+
+[node name="Sprite3" type="Sprite" parent="Konstruajxoj"]
+
+transform/pos = Vector2( 5380, 100 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
+flip_h = true
+
 [node name="Homoj" type="Node2D" parent="."]
 
-[node name="Homo" parent="Homoj" instance=ExtResource( 2 )]
+[node name="Homo" parent="Homoj" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 1400, 200 )
+transform/pos = Vector2( 1100, 220 )
 
-[node name="Homo1" parent="Homoj" instance=ExtResource( 2 )]
+[node name="Homo1" parent="Homoj" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 250, 200 )
+transform/pos = Vector2( 250, 220 )
 
-[node name="Homo2" parent="Homoj" instance=ExtResource( 2 )]
+[node name="Homo2" parent="Homoj" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( -550, 200 )
+transform/pos = Vector2( -550, 220 )
 
-[node name="Homo3" parent="Homoj" instance=ExtResource( 2 )]
+[node name="Homo3" parent="Homoj" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 2300, 200 )
+transform/pos = Vector2( 1750, 220 )
 
-[node name="Homo4" parent="Homoj" instance=ExtResource( 2 )]
+[node name="Homo4" parent="Homoj" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 3300, 200 )
+transform/pos = Vector2( 2450, 220 )
 
-[node name="Homo5" parent="Homoj" instance=ExtResource( 2 )]
+[node name="Homo5" parent="Homoj" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 4400, 200 )
+transform/pos = Vector2( 3550, 220 )
 
-[node name="Homo6" parent="Homoj" instance=ExtResource( 2 )]
+[node name="Homo6" parent="Homoj" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 7150, 250 )
+transform/pos = Vector2( 4582, 220 )
 
-[node name="Homo7" parent="Homoj" instance=ExtResource( 2 )]
+[node name="Homo7" parent="Homoj" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 6300, 250 )
+transform/pos = Vector2( 3732, 220 )
 
-[node name="Birdo" parent="." instance=ExtResource( 3 )]
+[node name="Birdo" parent="." instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 0, -100 )
 
 [node name="Insektoj" type="Node2D" parent="."]
 
-[node name="Insekto" parent="Insektoj" instance=ExtResource( 4 )]
+[node name="Insekto" parent="Insektoj" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 775.716, 108.81 )
 
-[node name="Insekto1" parent="Insektoj" instance=ExtResource( 4 )]
+[node name="Insekto1" parent="Insektoj" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 472.811, 12.9934 )
 
-[node name="Insekto2" parent="Insektoj" instance=ExtResource( 4 )]
+[node name="Insekto2" parent="Insektoj" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 1356.8, -135.368 )
 
-[node name="Insekto3" parent="Insektoj" instance=ExtResource( 4 )]
+[node name="Insekto3" parent="Insektoj" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 1953.34, 179.9 )
 
@@ -112,8 +209,8 @@ margin/bottom = 260.0
 transform/pos = Vector2( 0, 350 )
 transform/rot = 90.0
 transform/scale = Vector2( 0.585938, 0.585938 )
-normal = ExtResource( 5 )
-pressed = ExtResource( 6 )
+normal = ExtResource( 9 )
+pressed = ExtResource( 10 )
 bitmask = null
 shape = null
 shape_centered = true
@@ -127,8 +224,8 @@ visibility_mode = 0
 transform/pos = Vector2( 150, 350 )
 transform/rot = -90.0
 transform/scale = Vector2( 0.585938, 0.585938 )
-normal = ExtResource( 5 )
-pressed = ExtResource( 6 )
+normal = ExtResource( 9 )
+pressed = ExtResource( 10 )
 bitmask = null
 shape = null
 shape_centered = true

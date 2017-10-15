@@ -24,12 +24,12 @@ animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "ricxulo",
-"speed": 14.0
+"speed": 8.0
 }, {
 "frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "knabo",
-"speed": 14.0
+"speed": 8.0
 } ]
 
 [node name="Homo" type="Node2D"]
@@ -41,7 +41,7 @@ script/script = ExtResource( 1 )
 transform/scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 1 )
 animation = "knabo"
-frame = 4
+frame = 5
 playing = true
 
 
